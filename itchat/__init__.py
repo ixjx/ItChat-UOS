@@ -1,6 +1,7 @@
 from .core import Core
 from .config import VERSION, ASYNC_COMPONENTS
 from .log import set_logging
+from . import content
 
 if ASYNC_COMPONENTS:
     from itchat.async_components import load_components

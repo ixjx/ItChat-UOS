@@ -14,17 +14,17 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='itchat-uos',
+    name='itchat-uos-fix',
 
     version=itchat.__version__,
 
-    description='A complete wechat personal account api',
+    description='build from itchat-uos, just fix some bugs',
     long_description=long_description,
 
     url='https://github.com/why2lyj/ItChat-UOS',
 
-    author='Snow Wang',
-    author_email='admin@farseer.vip',
+    author='shurrik',
+    author_email='vissk1@163.com',
 
     license='MIT',
 
