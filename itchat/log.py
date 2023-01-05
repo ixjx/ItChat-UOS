@@ -10,6 +10,8 @@ class LogSystem(object):
         self.logger.addHandler(logging.NullHandler())
         self.logger.setLevel(self.loggingLevel)
         self.cmdHandler = logging.StreamHandler()
+        formatter = logging.Formatter('[%(asctime)s] %(filename)s line:%(lineno)d [%(levelname)s] %(message)s', '%Y-%m-%d %H:%M:%S')
+        self.cmdHandler.setFormatter(formatter)
         self.fileHandler = None
         self.logger.addHandler(self.cmdHandler)
     def set_logging(self, showOnCmd=True, loggingFile=None,
